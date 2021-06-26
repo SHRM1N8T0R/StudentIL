@@ -1,0 +1,457 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>
+        StudentIL | מילון מושגים
+    </title>
+    <meta name="description" content="A world meant for the students to help them with the academic language" />
+    <meta name="keywords" content="Student" />
+    <meta name="author" content="Danny Gossels,Reut Bibi, Shilat Daminat" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!-- קוד שגורם למסך להגדיל שאתה לוחץ על כפתור ל2005 וגורם למסך להקטין שלוחצים על 100% -->
+
+    <script>
+
+        var fontSizeSmall = true
+        var accessibilityMode = false;
+
+        function big() {
+            var body = document.getElementsByTagName('body')[0];
+            if (fontSizeSmall) {
+                body.style.zoom = "200%";
+                body.style.overflow = "scroll";
+                fontSizeSmall = false;
+                document.getElementById("buttonAccessibility").value = "לחצו ל100%";
+            }
+            else {
+                body.style.zoom = "100%";
+                body.style.overflowX = "hidden";
+
+                fontSizeSmall = true;
+                document.getElementById("buttonAccessibility").value = "לחצו ל200%";
+            }
+        }
+
+        /*קוד שמחליף את הכפתור הנגישות שלוחצים עליו */
+
+        function toggleTxt() {
+            var btnElement = document.getElementsByClassName('button300')[0]
+            if (!accessibilityMode) {
+                btnElement.value = "הסר נגישות"
+                accessibilityMode = true
+
+            } else {
+                btnElement.value = "לחץ לנגישות"
+                accessibilityMode = false
+            }
+        }
+
+
+    </script>
+    <!---קוד שהופך את הצבעים לנגישים באתר--->
+    <script>
+
+
+
+
+
+
+        function gfg_Run() {
+            toggleTxt()
+            $('*').toggleClass("access");
+
+        }
+
+
+    </script>
+
+    <!---favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/android-chrome-512x512.png">
+</head>
+<body>
+    <div id="container">
+        <input type="button" onclick="big()" value="לחצו ל200%" id="buttonAccessibility" class="button200">
+        <input type="button" onclick="gfg_Run()" class="button300" value=" לחץ לנגישות  ">
+
+        <div role="main">
+
+
+            <!-- תפריט ראשי -->
+            <header>
+                <nav id="nav_header">
+                    <ul>
+                        <li style="margin-top:16px;">  <a href="index.html" aria-label="לעמוד הראשי"> <img class="logo" src="Images/Logo/logo.png" height="70" /></a></li>
+                        <li><a class="nav-menu" href="dictionary.html" aria-label="לעמוד מילון מושגים לחץ כאן"><span>מילון מושגים</span></a></li>
+
+                        <li>
+                            <a class="nav-menu" href="Tips.html" aria-label="לעמוד טיפים לחץ כאן"><span>טיפים</span></a>
+                            <ul>
+                                <li><a class="nav-menu" href="Tips.html#index-tips-learning"><span>טיפים ללמידה יעילה</span></a></li>
+
+                                <li><a class="nav-menu" href="Tips.html#index-tips-newyear"><span>טיפים לתחילת השנה</span></a></li>
+                                <li><a class="nav-menu" href="Tips.html#index-tips-newpc"><span>טיפים למחשב נייד</span></a></li>
+
+                            </ul>
+                        </li>
+
+                        <li><a class="nav-menu" href="about.html" aria-label="לעמוד אודות לחץ כאן"><span>אודות</span></a></li>
+                        <li><a class="nav-menu" href="contactUs.html" aria-label="לעמוד צור קשר לחץ כאן"><span>צור קשר</span></a></li>
+                    </ul>
+
+                </nav>
+                <div id="skip_to_content">
+
+                    <a href="#list">דלג לתוכן העמוד</a>
+
+                </div>
+            </header>
+
+
+            <!-- תפריט פירורי לחם -->
+            <nav id="nav_bread_crumbs">
+                <ol>
+                    <li><a class="nav-menu" href="index.html">ראשי</a></li>
+                    <li><a class="nav-menu" href="dictionary.html" aria-label="מיקומך באתר כרגע הוא במילון המושגים">מילון מושגים</a></li>
+                </ol>
+            </nav>
+
+            <a name="list"></a>
+            <!-- עיצוב תחילת עמוד מילון מושגים -->
+            <img class="icon-dictionary" src="Images/dictionary/graduation_hat.png" height="150" width="150" />
+
+            <h1 class="dictionary-title">מילון מושגים לאקדמיה</h1>
+            <br />
+            <p class="dictionary-info">כאן יש את כל ההסברים שסטודנט חייב לדעת (מסודר לפי א'-ב')</p>
+            <br />
+
+            <section class="dictionary-container">
+
+                <h2 class="dictionary-title2">
+
+                    רשימת מושגים
+                    <i class="arrow down"></i>
+                </h2>
+                <ul aria-label="רשימת מושגים">
+                    <li><a href="#aguda" aria-label=" אגודת הסטודנטים">  אגודת הסטודנטים</a></li>
+                    <li><a href="#amir" Aria-label="אמיר/אמירם">אמי"ר/ אמיר"ם</a></li>
+                    <li><a href="#dean" Aria-label="דיקן/דקאן">דיקן/ דקאן</a> </li>
+                    <li><a href="#deanet" Aria-label="דיקנט/דיקן הסטודנטים">דיקנט/ דיקן הסטודנטים</a> </li>
+                    <li> <a href="#holiday" Aria-label="חופשת סמסטר ">חופשת הסמסטר </a></li>
+                    <li> <a href="#idcard" Aria-label="כרטיס ותעודת סטודנט">כרטיס ותעודת סטודנט </a></li>
+                    <li> <a href="#mazkirut" Aria-label="מזכירות החוג">מזכירות החוג</a></li>
+                    <li> <a href="#mechina" Aria-label="מכינה אקדמית">מכינה אקדמית </a></li>
+                    <li> <a href="#college" Aria-label="מכללה">מכללה </a></li>
+                    <li> <a href="#scholar" Aria-label="מלגה">מלגה </a></li>
+                    <li> <a href="#nz" Aria-label="נקודות זכות/נ" ז">נקודות זכות/נ"ז </a></li>
+                    <li> <a href="#intern" Aria-label="סטאז'/התמחות">סטאז'/ התמחות </a></li>
+                    <li> <a href="#silabus" Aria-label="סילבוס">סילבוס </a></li>
+                    <li> <a href="#semi" Aria-label="סמינריון">סמינריון </a></li>
+                    <li> <a href="#semester" Aria-label="סמסטר">סמסטר </a></li>
+                    <li> <a href="#psycho" Aria-label="פסיכומטרי">פסיכומטרי </a></li>
+                    <li> <a href="#faculty" Aria-label="פקולטה">פקולטה </a></li>
+                    <li> <a href="#choice" Aria-label="קורסי בחירה">קורסי בחירה </a></li>
+                    <li> <a href="#dare" Aria-label="קורסי חובה">קורסי חובה </a></li>
+                    <li> <a href="#hours" Aria-label="שעות סמסטריאליות">שעות סמסטריאליות </a></li>
+
+
+
+                </ul>
+
+
+
+
+
+            </section>
+            <section class="musag">
+                <a name="aguda"></a>
+
+                <h1 class="musag-title">
+                    אגודת הסטודנטים
+                </h1>
+                <p>
+                    מדובר בארגון המוקם על ידי סטודנטים במוסד אקדמי, שתפקידו לדאוג לזכויותיהם, רווחתם וטובתם של הסטודנטים, ובנוסף מארגנת שלל פעילויות חברתיות, אירועים, מסיבות, ירידים ועוד.
+                    האגודה נבחרת על ידי הסטודנטים של אותו מוסד לימודי, ובעצם אם ירצה בכך, לכל סטודנט יש אפשרות להיות חלק מהאגודה.
+                    עצה מאיתנו- תמיד שווה להיות חבר של ההוא מאגודת הסטודנטים.
+
+                </p>
+                <br />
+
+                <iframe src="https://giphy.com/embed/l0HTYUmU67pLWv1a8" width="480" height="335" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/nice-borat-very-l0HTYUmU67pLWv1a8"></a></p>
+                <br />
+                <a name="amir"></a>
+
+                <h1 class="musag-title">
+                    אמי"ר/ אמיר"ם
+                </h1>
+                <p>
+                    מבחני מיון באנגלית, המאפשרים למוסדות לימוד להשכלה גבוהה בישראל להעריך את רמת הידע של מועמדים וסטודנטים בשפה האנגלית ולסווגם לקורסי אנגלית ברמות השונות. את הבחינה עורך המרכז הארצי לבחינות ולהערכה.
+
+                </p>
+                <br />
+                <a name="dean"></a>
+
+                <h1 class="musag-title">
+                    דיקן/ דקאן
+                </h1>
+                <p>
+
+                    באוניברסיטאות ובמכללות עומד הדיקן בדרך כלל בראש פקולטה, ועוסק בניהול האקדמי שלה. לתפקיד זה, נבחר פרופסור מסגל הפקולטה.
+
+                </p>
+                <br />
+                <a name="deanet"></a>
+
+                <h1 class="musag-title">
+                    דיקנט/ דיקן הסטודנטים
+                </h1>
+                <p>
+                    חייל במילואים? סטודנטית וגם אמא? עולה חדש? דיקן הסטודנטים ידאגו לך! הם יעניקו לך מגוון שירותי סיוע, כגון: מתן מלגות סיוע, שיעורי עזר לסטודנטים מאוכלוסיות מסוימות (כמו עולים, לקויי למידה), שירות פסיכולוגי ועזרה במציאת תעסוקה מקצועית לסטודנטים ובוגרים ועוד.
+                </p>
+                <br />
+                <a name="holiday"></a>
+
+                <h1 class="musag-title">
+                    חופשת סמסטר
+                </h1>
+                <p>
+                    מושג שכולם אוהבים לשמוע. זהו החופש שיש בין סמסטרים שלרוב נמשך בערך חודש. הרבה פעמים בחופשת הסמסטר לא תהיו חופשיים לגמרי ויזלגו אליה מבחנים ומטלות, אך לא יתקיימו בה קורסים. במידה ואתם לומדים שני סמסטרים בשנה, כמו הרוב, חופשת הסמסטר השנייה בכל שנה תהפוך לחופשת קיץ ארוכה של כשלושה חודשים.
+                </p>
+                <br />
+                <iframe src="https://giphy.com/embed/l2Je24ONWRJepKEpO" width="480" height="366" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/season-8-the-simpsons-8x19-l2Je24ONWRJepKEpO"></a></p>
+                <br />
+
+                <a name="idcard"></a>
+
+                <h1 class="musag-title">
+                    כרטיס ותעודת סטודנט
+                </h1>
+                <p>
+                    כרטיס סטודנט הוא התעודה המזהה של הסטודנטים במהלך לימודיהם באוניברסיטה. הכרטיס מקנה שלל הנחות והטבות במוסד הלימודים, בתחבורה הציבורית ובבתי עסק נבחרים.
+                    עצה מאיתנו- הקפידו להיות יפים בתמונה של הכרטיס, כי היא תלווה אתכם במהלך כל התואר.
+
+
+                </p>
+                <br />
+                <iframe src="https://giphy.com/embed/Fh9jhYLDLo87u" width="480" height="265" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/superbad-mclovin-Fh9jhYLDLo87u"></a></p>
+                <br />
+                <a name="mazkirut"></a>
+
+                <h1 class="musag-title">
+                    מזכירות החוג
+                </h1>
+                <p>
+                    מזכירות החוג הינה הכתובת המרכזית לקבלת מידע שוטף, עדכונים וסיוע במהלך הלימודים, בכל הנושאים הנוגעים לתוכניות הלימודים בחוג.
+                    עצה מאיתנו- לא להתבייש להציק ולשאול.
+                </p>
+                <br />
+                <a name="mechina"></a>
+
+                <h1 class="musag-title">
+                    מכינה אקדמית
+                </h1>
+                <p>
+                    ממוצע הבגרויות שלך לא מספיק לתואר שתמיד חלמת עליו? בדיוק בשביל זה קיימת המכינה הקדם אקדמאית. מטרתה היא להכין סטודנטים ללימודים אקדמיים, והם פועלות במוסדות להשכלה גבוהה – אוניברסיטאות, מכללות אקדמיות, מכללות לחינוך ומכללות אזוריות.
+
+                </p>
+                <br />
+                <a name="college"></a>
+
+                <h1 class="musag-title">
+                    מכללה
+                </h1>
+                <p>
+                    מוסד להשכלה גבוהה בעל הסמכה רק לתואר ראשון ושני, שלרוב אינו מתעסק במחקרים. מכללות נועדו ללמד ולהכשיר סטודנטים ויש בהן יותר דגש על הוראת הסטודנטים והכשרתם, גם לתחומים ממוקדים ולעבודה.
+                    עצה מאיתנו- אם חשוב לך יחס אישי , מכללה זו הבחירה שלך! לרוב במכללות יש יותר יחס אישי והתאמה מדויקת לסגנונות למידה שונים. גם הכיתות בדרך כלל קטנות יותר ויש יותר הכרות אישית עם הסטודנטים.
+
+                </p>
+                <br />
+                <a name="scholar"></a>
+
+                <h1 class="musag-title">
+                    מלגה
+                </h1>
+                <p>
+                    מענק כספי המיועד לסטודנטים. המלגות מחולקות ל-2 סוגים עיקריים: מלגות ללא התנדבות, ומלגות עם התנדבות אשר בתמורה לקבלתן על הסטודנט לבצע בדר"כ פעילות חברתית מסוימת, לדוגמה: חונכות והדרכה.
+                    עצה מאיתנו - לפני שאתם רצים לחפש מלגות (אז מה אם כבר חיפשתם בגוגל ) חשוב להבין אילו מלגות מעניינות אתכם ואילו מלגות מתאימות לכם.
+
+                </p>
+
+                <br />
+                <a name="nz"></a>
+
+                <h1 class="musag-title">
+                    נקודות זכות (נ"ז)
+
+                </h1>
+                <p>
+                    הנקודות שתרצו לצבור הכי הרבה במהלך התואר! כל תואר מורכב מקורסי חובה וקורסי בחירה, כשכל קורס מקנה לכם (במידה ועברתם אותו בהצלחה כמובן ) מספר נקודות זכות.
+                    על מנת לסיים את התואר אתם צריכים להגיע לסף מסוים של נקודות זכות. למעשה, נקודות זכות היא הדרך של האוניברסיטה לתאר כמה למדת. חשוב שתדעו שהחלוקה לנקודות זכות תהיה לרוב על פי שעות שבועיות, קושי הקורס וחשיבות הנושא.
+
+                </p>
+                <br />
+                <a name="intern"></a>
+
+                <h1 class="musag-title">
+                    סטאז'/ התמחות
+                </h1>
+                <p>
+                    בחוגים רבים, על מנת להשלים את התואר יש לבצע סטאז', כלומר עבודה מעשית מחוץ לתחום המוסד האקדמי, בתחום אותו אתם לומדים. לסטאז' יש מינימום שעות שכל סטודנט חייב לבצע על מנת לקבל את האישור מהמל"ג. במקרים רבים לא תקבלו שכר עבור שעות אלו, מה שהופך את נושא התשלום (או אי התשלום למעשה) לסיפור כואב במיוחד.
+                </p>
+                <br />
+                <iframe src="https://giphy.com/embed/BY8ORoRpnJDXeBNwxg" width="480" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/theoffice-BY8ORoRpnJDXeBNwxg"></a></p>
+
+                <br />
+                <a name="silabus"></a>
+
+                <h1 class="musag-title">
+                    סילבוס
+                </h1>
+                <p>
+                    תחשבו על מעיין "חוזה" בין המרצה לבינכם, הסטודנטים, ובו אתם למעשה עושים תיאום ציפיות של המרצה ממכם. בעצם מדובר במסמך אשר מפרט את תכני הלימוד ונושאי ההרצאות של קורס אקדמי, יכיל מידע על הקורס, מטלות ודרכי קבלת ציונים.
+                    עצה מאיתנו- לרוב, הסילבוס יפורסם עוד לפני תחילת הקורס. שווה להציץ בו.
+                </p>
+                <br />
+                <a name="semi"></a>
+
+                <h1 class="musag-title">
+                    סמינריון
+                </h1>
+                <p>
+                    העבודה האקדמית המתקדמת ביותר שתגישו במהלך התואר הראשון. על מנת לקבל את התואר יש להגיש בדרך כלל 2 עבודות סמינריון אשר מוגשות לרוב בסוף תקופת הלימודים. אולי עכשיו קצת יותר ברור למה בסביבות אוקטובר הפיד שלכם מלא באנשים ממורמרים.
+                </p>
+                <br />
+                <iframe src="https://giphy.com/embed/P8X4lemg5Iphe" width="480" height="350" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/reaction-gif-help-me-im-not-ready-for-adulting-P8X4lemg5Iphe"></a></p>
+                <br />
+                <a name="semester"></a>
+
+                <h1 class="musag-title">
+                    סמסטר
+                </h1>
+                <p>
+                    סמסטר-
+                    תקופת זמן אקדמית אשר בסופה ניגשים למבחנים. סמסטר לרוב כולל 13 שיעורים ונמשך כ-3 חודשים. ישנם שלושה סמסטרים: חורף, אביב וקיץ. כל שנה אקדמית נפתחת בסמסטר חורף (באמצע אוקטובר, אחרי החגים) ומסתיימת בסמסטר אביב (יוני). במרבית התארים ישנם רק שני סמסטרים בכל שנה (חורף ואביב).
+
+                </p>
+                <br />
+                <a name="psycho"></a>
+
+                <h1 class="musag-title">
+                    פסיכומטרי
+                </h1>
+                <P>
+                    מבחן שנועד לבחון את יכולותיו של הסטודנט המיועד ומשמש כלי למיון מועמדים למוסדות האקדמיים בארץ. לרוב כדי להתקבל ללימודים אקדמיים תידרשו לעמוד בציון סף, הנקבע על ידי כל מוסד באופן אינדיבידואלי.
+                    עצה מאיתנו- שווה להשקיע בפרק האנגלית. הציון בפרק זה משמש כלי למדידת הרמה שלכם, שעל פיו תהיו משובצים לקורס ברמת האנגלית או אפילו לקבלת פטור.
+
+                </P>
+                <br />
+                <a name="faculty"></a>
+
+                <h1 class="musag-title">
+                    פקולטה
+                </h1>
+                <p>
+                    כל מוסד אקדמי מחולק לפקולטות. פקולטה הינה היחידה בתוך המוסד האקדמי, אליה אתם משתייך. למשל: הפקולטה למדעי המחשב, הפקולטה למשפטים, הפקולטה למדעי הרוח וכו'. בכל פקולטה יכולים להיות מספר חוגים. הפקולטה למדעי החברה למשל, מכילה את החוגים: תקשורת, יחסים בין לאומיים, סוציולוגיה ועוד.
+                </p>
+
+                <br />
+                <a name="choice"></a>
+
+                <h1 class="musag-title">
+                    קורסי בחירה
+                </h1>
+                <p>
+                    קורסים לבחירת הסטודנט מתוך רשימה מוצעת. לימודי הבחירה נועדו לאפשר לסטודנט לגוון את תוכנית לימודיו וללמוד נושאים המעניינים אותו במיוחד. ניתן לבחור איזה קורסים רוצים ללמוד לפי מספר נקודות הזכות שצריך לאסוף לתואר.
+                </p>
+                <br />
+                <a name="dare"></a>
+
+                <h1 class="musag-title">
+                    קורסי חובה
+                </h1>
+                <p>
+                    קורסים שכולם חייבים לסיים כדי לקבל את התואר. בד"כ קורסי חובה הם קורסי ליבה מרכזיים בתוכנית הלימודים, ובלעדיהם אי אפשר לעמוד בסטנדרטים המקצועיים המקובלים. לכן, ישנה חשיבות רבה בהשלמת קורסים אלו בהצלחה.
+                </p>
+                <br />
+                <a name="hours"></a>
+
+                <h1 class="musag-title">
+                    שעות סמסטריאליות (ש"ס)
+                </h1>
+                <p>
+                    שעה סמסטריאלית לרוב הינה 45 דקות כאשר כל  שיעור הוא לרוב שעתיים סמסטריאליות- משמע, שעה וחצי. לרוב קורסים עם יותר ש"סים יהיו שווים גם יותר נ"זים.
+                </p>
+                <br />
+                <iframe src="https://giphy.com/embed/gf5lHEzYVU8DoVVlhs" width="480" height="362" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/memecandy-gf5lHEzYVU8DoVVlhs"></a></p>
+                <br />
+
+            
+            </section>
+
+            <!---כפתור חזרה לרשימת המושגים-->
+            <a href="#list" aria-label="לחץ כאן כדי לעלות חזרה לרשימת המושגים">
+                <div class="elementor-button">
+
+                    <p>  חזרה לרשימת המושגים</p>
+                    <i class="arrowup"></i>
+                </div>
+            </a>
+
+
+
+
+
+            <!---פוטר של תחתית העמוד-->
+
+            <footer>
+                <nav class="nav_footer" aria-label="תפריט תחתון">
+                    <ul class="heb_footer">
+                        <li><a href="index.html" aria-label="לעמוד הראשי" target="_self">עמוד הבית</a></li>
+                        <li><a href="about.html" aria-label="לעמוד אודות לחץ כאן" target="_self">אודות</a></li>
+                        <li><a href="#" aria-label="עמוד זה אינו פעיל" target="_self" class="notActive">שאלות נפוצות</a></li>
+                    </ul>
+                    <ul class="heb_footer">
+                        <li><a href="siteMap.html" aria-label="לעמוד מפת האתר לחץ כאן" target="_self">מפת האתר</a></li>
+                        <li><a href="contactUs.html" aria-label="לעמוד צור קשר לחץ כאן" target="_self">צור קשר</a></li>
+                        <li><a href="Documents/זכויות יוצרים.pdf">זכויות יוצרים</a></li>
+                    </ul>
+                    <ul class="english_footer">
+                        <li><a href="dictionary.html" aria-label="לעמוד מילון מושגים לחץ כאן" target="_self">מילון מושגים</a></li>
+                        <li><a href="Tips.html#index-tips-learning" aria-label="לעמוד טיפים לחץ כאן" target="_self">טיפים ללמידה יעילה</a></li>
+
+                        <li><a href="Tips.html#index-tips-newyear" aria-label="לעמוד טיפים לחץ כאן" target=" self">טיפים לתחילת שנה</a></li>
+                        <li><a href="Tips.html#index-tips-newpc" aria-label="לעמוד טיפים לחץ כאן" target="_self">טיפים למחשב נייד</a></li>
+                    </ul>
+                </nav>
+                <div id="footer_lower">
+                    <p id="Copyright_StudentIL">
+                        כל הזכויות שמורות ל             2021 StudentIL ©
+                    </p>
+                    <p id="website_address_StudentIL">
+                        www.StudentIL.co.il
+                    </p>
+
+
+                </div>
+            </footer>
+
+
+
+        </div>
+
+    </div>
+</body>
+</html>

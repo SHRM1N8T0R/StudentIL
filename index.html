@@ -1,0 +1,340 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>
+        StudentIL | המדריך לשפה הסטודנטיאלית
+    </title>
+    <meta name="description" content="A world meant for the students to help them with the academic language" />
+    <meta name="keywords" content="Student" />
+    <meta name="author" content="Danny Gossels,Reut Bibi, Shilat Daminat" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+   
+    <!-- קוד שגורם למסך להגדיל שאתה לוחץ על כפתור ל2005 וגורם למסך להקטין שלוחצים על 100% -->
+
+    <script>
+
+        var fontSizeSmall = true
+        var accessibilityMode = false;
+
+        function big() {
+            var body = document.getElementsByTagName('body')[0];
+            if (fontSizeSmall) {
+                body.style.zoom = "200%";
+                body.style.overflow = "scroll";
+                fontSizeSmall = false;
+                document.getElementById("buttonAccessibility").value = "לחצו ל100%";
+            }
+            else {
+                body.style.zoom = "100%";
+                body.style.overflowX = "hidden";
+
+                fontSizeSmall = true;
+                document.getElementById("buttonAccessibility").value = "לחצו ל200%";
+            }
+        }
+
+        /*קוד שמחליף את הכפתור הנגישות שלוחצים עליו */
+
+        function toggleTxt() {
+            var btnElement = document.getElementsByClassName('button300')[0]
+            if (!accessibilityMode) {
+                btnElement.value = "הסר נגישות"
+                accessibilityMode = true
+
+            } else {
+                btnElement.value = "לחץ לנגישות"
+                accessibilityMode = false
+            }
+        }
+
+
+    </script>
+    <!---קוד שהופך את הצבעים לנגישים באתר--->
+    <script>
+        
+
+
+
+
+     
+        function gfg_Run() {
+            toggleTxt()
+            $('*').toggleClass("access");
+            
+        }
+
+
+    </script>
+
+
+
+    <!---favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/android-chrome-512x512.png">
+
+    <link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body>
+    <div id="container">
+        <input type="button" onclick="big()" value="לחצו ל200%" id="buttonAccessibility" class="button200">
+        <input type="button" onclick="gfg_Run()" class="button300" value=" לחץ לנגישות  ">
+          
+        <!-- תפריט ראשי -->
+        <header id="index_open">
+            <nav id="nav_header">
+                <ul>
+                    <li style="margin-top:16px;">  <a href="index.html" aria-label="לעמוד הראשי"> <img class="logo" src="Images/Logo/logo.png" height="70" /></a></li>
+                    <li><a class="nav-menu" href="dictionary.html" aria-label="לעמוד מילון מושגים לחץ כאן"><span>מילון מושגים</span></a></li>
+
+                    <li>
+                        <a class="nav-menu" href="Tips.html" aria-label="לעמוד טיפים לחץ כאן"><span>טיפים</span></a>
+                        <ul>
+                            <li><a class="nav-menu" href="Tips.html#index-tips-learning"><span>טיפים ללמידה יעילה</span></a></li>
+                            <li><a class="nav-menu" href="Tips.html#index-tips-newyear"><span>טיפים לתחילת השנה</span></a></li>
+                            <li><a class="nav-menu" href="Tips.html#index-tips-newpc"><span>טיפים למחשב נייד</span></a></li>
+
+                        </ul>
+                    </li>
+
+                    <li><a class="nav-menu" href="about.html" aria-label="לעמוד אודות לחץ כאן"><span>אודות</span></a></li>
+                    <li><a class="nav-menu" href="contactUs.html" aria-label="לעמוד צור קשר לחץ כאן"><span>צור קשר</span></a></li>
+                </ul>
+
+            </nav>
+            <div id="skip_to_content">
+
+                <a href="#arrowdown" aria-label="דלג לתוכן המרכזי בעמוד"> דלג לתוכן העמוד</a>
+
+            </div>
+        </header>
+
+        <section>
+
+            <div>
+
+                <h1 class="title">StudentIL</h1>
+                <br />
+                <h1 class="title2">המדריך לשפה הסטודנטיאלית</h1>
+
+            </div>
+
+            <a href="#arrowdown"><img src="Images/index/arrow.gif" alt="חץ שבלחיצה עובר למקטע הבא" id="index_arrow" /></a>
+
+        </section>
+        <br />
+
+        <div id="pc">
+            <img src="Images/index/Gallery/PC.png" alt="תמונה של מחשב נייד" width="705" height="723" />
+
+        </div>
+        <br />
+        <!----הסקשיין של המושגים הפופולאריים באתר שלנו-->
+        <section id="populars_musag">
+
+
+            <h1 class="title_h1"><a name="arrowdown"></a> המושגים הפופולאריים באתר שלנו </h1>
+            <div class="greybox">
+                <h2 class="title_index_section2">נקודות זכות</h2>
+                <br />
+                <p class="p_index_section2">
+                    הנקודות שתרצו לצבור הכי הרבה במהלך התואר! כל תואר מורכב מקורסי חובה וקורסי בחירה...
+                </p>
+                <div class="elementor-button-index1" aria-label="לחץ כאן למושג המלא">
+                    <a href="dictionary.html#nz">
+                        למושג המלא
+
+                    </a>
+                </div>
+            </div>
+
+            <div class="greybox2">
+
+                <h2 class="title_index_section2"> מלגה</h2>
+                <br />
+                <p class="p_index_section2">
+                    מענק כספי המיועד לסטודנטים. המלגות מחולקות ל-2 סוגים עיקריים: מלגות ללא התנדבות ומלגות עם התנדבות...
+                </p>
+
+                <div class="elementor-button-index2">
+                    <a href="dictionary.html#scholar" aria-label="לחץ כאן למושג המלא">
+                        למושג המלא
+
+                    </a>
+                </div>
+            </div>
+
+            <div class="greybox3">
+
+
+                <h2 class="title_index_section2"> כרטיס סטודנט</h2>
+                <br />
+                <p class="p_index_section2">
+                    כרטיס סטודנט הוא התעודה המזהה של הסטודנטים במהלך לימודיהם באוניברסיטה...
+                </p>
+
+                <div class="elementor-button-index3">
+                    <a href="dictionary.html#idcard" aria-label="לחץ כאן למושג המלא">
+                        למושג המלא
+
+                    </a>
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <!-- קרוסלה הטקסט והתמונות -->
+        <section>
+            <div id="carousel">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <img src="Images/index/Gallery/STUDENTS-INDEX.png" style="width:100%">
+                        <div class="text"></div>
+                        <h1>
+                            טיפ בקטנה
+                        </h1>
+                        <p>
+                            במקום לסכם את החומר כתבו שאלות מרכזיות על כל קטע קריאה ונסו לבחון את עצמכם: האם אתם יודעים להסביר את כל העקרונות המרכזיים?
+
+                        </p>
+
+                        <div class="elementor-button-index-carousel-1">
+                            <a href="tips.html#index-1st-tip" aria-label="לחץ כאן לטיפ המלא">
+                                לטיפ המלא
+                            </a>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="mySlides fade">
+                        <img src="Images/index/Gallery/COFFE-INDEX.png" style="width:100%">
+                        <div class="text"></div>
+                        <h1>
+                            טיפ בקטנה
+
+                        </h1>
+                        <p>
+                            כדי לייעל את הלמידה, יש לפרוס אותה על פני פרק זמן ארוך, ולא לדחוס למידה רבה בפרק זמן קצר. את סך כל הזמן שהיינו מקדישים ללמידה בכל דרך...
+
+                        </p>
+                        <div class="elementor-button-index-carousel-1">
+                            <a href="Tips.html#index-tips2" aria-label="לחץ כאן לטיפ המלא">
+                                לטיפ המלא
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="Images/index/Gallery/keyboard.png" style="width:100%">
+                        <div class="text"></div>
+                        <h1>
+                            טיפ בקטנה
+                        </h1>
+                        <p>
+                            סדר וארגון תורמים מאוד להפחתת הלחץ והחרדה לפני תחילת השנה. כדאי לקרוא על הקורסים באינטרנט או את הפרק הראשון של אחד מספרי הלימוד...
+
+                        </p>
+                        <div class="elementor-button-index-carousel-1">
+                            <a href="tips.html#index-tips-3" aria-label="לחץ כאן לטיפ המלא">
+                                לטיפ המלא
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+            <!-- נקודות לחיצות בקרוסלה שהעלמתי בכוונה -->
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+        </section>
+        <pre>
+
+
+
+
+</pre>
+        <!----סקשיין של מכללות שכתבו עלינו-->
+        <section id="college-lists">
+
+            <h1 class="college-list">כתבו עלינו</h1>
+            <div class="index-college-pic">
+                <a href="https://www.biu.ac.il/" target="_blank" aria-label="למעבר לאתר אוניברסיטת בר אילן לחץ כאן" title="קישור לאתר אוניברסיטת בר אילן"><img src="Images/index/colleges/Bar-ilan.jpg" id="Bar-ilan" alt="לוגו של אוניברסיטת בר אילן" /></a>
+                <a href="https://in.bgu.ac.il/Pages/default.aspx" target="_blank" aria-label="למעבר לאתר אוניברסיטת בן גוריון לחץ כאן" title="קישור לאתר אוניברסיטת בן גוריון"> <img src="Images/index/colleges/BGU.png" id="BGU" alt="לוגו של אוניברסיטת בן גוריון" /></a>
+                <a href="https://www.tau.ac.il/" target="_blank" aria-label="למעבר לאתר אוניברסיטת תל אביב לחץ כאן" title="קישור לאתר אוניברסיטת תל אביב"><img src="Images/index/colleges/TelAviv.png" id="TelAviv" alt="לוגו של אוניברסיטת תל אביב" /></a>
+                <a href="https://www.hit.ac.il/" target="_blank" aria-label="למעבר לאתר מכון הטכנולוגי חולון  לחץ כאן" title="קישור לאתר מכון הטכנולוגי חולון"> <img src="Images/index/colleges/HIT.jpg" id="HIT" alt="לוגו של המכון הטכנולוגי חולון" /></a>
+            </div>
+
+
+        </section>
+
+        <!---פוטר של תחתית העמוד-->
+        <footer>
+            <nav class="nav_footer" aria-label="תפריט תחתון">
+                <ul class="heb_footer">
+                    <li><a href="index.html" aria-label="לעמוד הראשי" target="_self">עמוד הבית</a></li>
+                    <li><a href="about.html" aria-label="לעמוד אודות לחץ כאן" target="_self">אודות</a></li>
+                    <li><a href="#" aria-label="עמוד זה אינו פעיל" target="_self" class="notActive">שאלות נפוצות</a></li>
+                </ul>
+                <ul class="heb_footer">
+                    <li><a href="siteMap.html" aria-label="לעמוד מפת האתר לחץ כאן" target="_self">מפת האתר</a></li>
+                    <li><a href="contactUs.html" aria-label="לעמוד צור קשר לחץ כאן" target="_self">צור קשר</a></li>
+                    <li><a href="Documents/זכויות יוצרים.pdf">זכויות יוצרים</a></li>
+                </ul>
+                <ul class="english_footer">
+                    <li><a href="dictionary.html" target="_self">מילון מושגים</a></li>
+                    <li><a href="Tips.html#index-tips-learning" aria-label="לעמוד טיפים לחץ כאן" target="_self">טיפים ללמידה יעילה</a></li>
+
+                    <li><a href="Tips.html#index-tips-newyear" aria-label="לעמוד טיפים לחץ כאן" target=" self">טיפים לתחילת שנה</a></li>
+                    <li><a href="Tips.html#index-tips-newpc" aria-label="לעמוד טיפים לחץ כאן" target="_self">טיפים למחשב נייד</a></li>
+                </ul>
+            </nav>
+            <div id="footer_lower">
+                <p id="Copyright_StudentIL">
+                    כל הזכויות שמורות ל             2021 StudentIL ©
+                </p>
+                <p id="website_address_StudentIL">
+                    www.StudentIL.co.il
+                </p>
+
+
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+    </div>
+
+   
+
+</body>
+</html>

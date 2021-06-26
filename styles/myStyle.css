@@ -1,0 +1,1425 @@
+﻿/*-------------------------------------------------פונטים*/
+
+/*font-family: 'Heebo', sans-serif;*/ /*בעת שימוש להקליד את זה + משקל גופן*/
+
+@font-face {
+    font-family: 'Heebo-Black';
+    src: url('../Fonts/Heebo/Heebo-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Heebo-Bold';
+    src: url('../Fonts/Heebo/Heebo-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Heebo-ExtraBold';
+    src: url('../Fonts/Heebo/Heebo-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Heebo-ExtraLight';
+    src: url('../Fonts/Heebo/Heebo-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Heebo-Light';
+    src: url('../Fonts/Heebo/Heebo-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Heebo-Medium';
+    src: url('../Fonts/Heebo/Heebo-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Heebo-Regular';
+    src: url('../Fonts/Heebo/Heebo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Heebo-SemiBold';
+    src: url('../Fonts/Heebo/Heebo-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Heebo-Thin';
+    src: url('../Fonts/Heebo/Heebo-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OS_Luizi Round-FFC';
+    src: url('../Fonts/OS_Luizi Round-FFC.otf') format('opentype');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    direction: rtl;
+  overflow-x:hidden;
+}
+
+
+#container {
+    width: 1280px;
+    margin: 0 auto;
+    height: 10px;
+}
+/*כפתור של מצב הגדלת מסך ל 200 או 100%*/
+.button200 {
+    background: yellow;
+    color: black;
+    font-size: 8.15pt;
+    z-index: 29;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 500;
+    border: none;
+    position: fixed;
+    top: 0px;
+    width: 60px;
+    padding: 0px;
+}
+/*כפתור לקוד צבעים נגישים*/
+.button300 {
+    background: yellow;
+    color: black;
+    font-size: 8.15pt;
+    z-index: 29;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 500;
+    border: none;
+    position: fixed;
+    top: 19px;
+    width: 62px;
+    padding: 0px;
+}
+/* קוד לצבעים נגישים */
+.access {
+    background-color: black !important;
+    color: yellow !important;
+}
+    .access .title2 {
+        z-index: 2;
+       width:fit-content;
+       
+    }
+  
+
+header {
+    width: 1280px;
+    height: 410px;
+    background-color: #FFC13D;
+    margin: auto;
+    padding-top: 1px;
+}
+
+
+#index_open {
+    width: 1280px;
+    height: 722px;
+    background-color: #FFC13D;
+    margin: auto;
+    padding-top: 1px;
+}
+
+/*-------------------------------------------------תפריטים*/
+
+
+/*HOVER COLOR -שינוי צבע*/
+.nav-menu :hover {
+    color: #091F92;
+}
+
+
+/*תפריט ראשי*/
+#nav_header ul li {
+    display: block;
+    float: right;
+}
+
+    #nav_header ul li span {
+        font-family: 'Heebo-Regular';
+        font-size: 23px;
+    }
+
+/*תפריט ראשי*/
+#nav_header {
+    display: block;
+    background-color: blanchedalmond;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+    width: 1000px;
+    margin-right: -65px;
+    font-family: 'Heebo-Regular';
+    position: relative;
+    z-index: 1;
+}
+    /*תפריט ראשי*/
+    #nav_header ul li a {
+        display: block;
+        width: 165px;
+        text-decoration: none;
+        text-align: center;
+        height: 42px;
+        padding-top: 20px;
+        color: white;
+        font-size: 20px;
+        z-index: 3;
+    }
+
+
+    /*תפריט ראשי*/
+    #nav_header ul li ul {
+        display: none;
+        position: absolute;
+    }
+
+    /*תפריט משני לטיפים*/
+    #nav_header ul li:hover ul {
+        display: block;
+        width: 210px;
+        padding-top: 5px;
+        right: 307px;
+        top: 35px;
+    }
+
+
+    /*תפריט משני לטיפים*/
+    #nav_header ul li ul a {
+        width: 210px;
+    }
+
+
+
+/*תפריט פירורי לחם*/
+#nav_bread_crumbs ol li {
+    display: inline-block;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    font-family: 'Heebo-Bold';
+}
+
+
+    /*צבע תפריט פירורי לחם*/
+    #nav_bread_crumbs ol li a {
+        color: black;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    #nav_bread_crumbs ol li a:hover {
+     color:#091F92;
+    }
+    #nav_bread_crumbs ol li:after {
+        content: " > ";
+        color: black;
+    }
+
+    #nav_bread_crumbs ol li:last-child:after {
+        content: "";
+    }
+
+/*קישור לא תקין*/
+.notActive {
+    cursor: not-allowed;
+    color: gray;
+}
+
+/*תפריט תחתון*/
+.nav_footer
+/*עיצוב גודל התפריט עצמו*/ {
+    background-color: #FFC13D;
+    width: 1280px;
+    height: 150px;
+    left: 0;
+    bottom: 0;
+}
+
+
+    .nav_footer ul
+    /*הורדת התבליטים וצמצום הרווח+יישור כלל הרשימות אחת ליד השניה*/ {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        display: inline-block;
+        margin-right: 50px;
+    }
+
+        .nav_footer ul li a
+        /*עיצוב פנים התפריט*/ {
+            color: white;
+            font-family: 'Heebo', sans-serif;
+            font-weight: 400;
+            display: block;
+            text-decoration: none;
+            padding-top: 10px;
+        }
+
+            .nav_footer ul li a:hover {
+                color: #091F92;
+            }
+           
+           
+.nav_footer .heb_footer li a
+/*עיצוב פנים תפריט עברית*/ {
+    text-align: right;
+    position: relative;
+    top: 1px;
+}
+
+
+    .nav_footer .english_footer li a {
+        text-align: right;
+        position: relative;
+        top: 27px;
+    }
+
+#footer_lower {
+    background-color: #091F92;
+    height: 50px;
+}
+
+#Copyright_StudentIL {
+    color: white;
+    font-family: 'Heebo-SemiBold';
+position:relative;
+top:25px;
+float:left;
+left:10px;
+}
+
+#website_address_StudentIL {
+    color: white;
+    font-family: 'Heebo-SemiBold';
+    position:relative;
+    top:25px;
+    right:10px;
+    float:right;
+}
+
+
+
+
+/*תפריט תחתון מספר 2 לעמודים אודות וצור קשר*/
+.nav_footer2
+/*עיצוב גודל התפריט עצמו*/ {
+    background-color: #FFC13D;
+    width: 1280px;
+    height: 150px;
+    margin-bottom: -16px;
+}
+
+
+    .nav_footer2 ul
+    /*הורדת התבליטים וצמצום הרווח+יישור כלל הרשימות אחת ליד השניה*/ {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        display: inline-block;
+        margin-right: 50px;
+    }
+
+        .nav_footer2 ul li a
+        /*עיצוב פנים התפריט*/ {
+            color: white;
+            font-family: 'Heebo', sans-serif;
+            font-weight: 400;
+            display: block;
+            text-decoration: none;
+            padding-top: 3px;
+        }
+
+            .nav_footer2 ul li a:hover {
+                color: #091F92;
+            }
+
+
+    .nav_footer2 .heb_footer2 li a
+    /*עיצוב פנים תפריט עברית*/ {
+        text-align: right;
+        position: relative;
+        top: -5px;
+    }
+
+
+    .nav_footer2 .english_footer2 li a {
+        text-align: right;
+        position: relative;
+        top: 21px;
+    }
+
+#footer_lower2 {
+    background-color: #091F92;
+    height: 50px;
+}
+
+#Copyright_StudentIL2 {
+    color: white;
+    font-family: 'Heebo-SemiBold';
+    position: relative;
+    top: 3px;
+float:left;
+left:10px;
+}
+
+#website_address_StudentIL2 {
+    color: white;
+    font-family: 'Heebo-SemiBold';
+    position: relative;
+    top: 3px;
+    float:right;
+    right:10px;
+}
+
+/*-------------------------------------------------עמוד הבית*/
+
+/*תמונת המחשב ברקע*/
+#pc {
+    position: relative;
+    display: inline-block;
+    left: -575px;
+    bottom: 1109px;
+}
+
+
+
+/*כותרת ראשית באנגלית*/
+.title {
+    font-family: 'Heebo-ExtraBold';
+    color: white;
+    position: relative;
+    right: 24px;
+    top: -570px;
+    font-size: 48px;
+}
+
+
+/*כותרת ראשית בעברית*/
+.title2 {
+    color: white;
+    position: relative;
+    right: 24px;
+    top: -553px;
+    font-family: 'Heebo-ExtraBold';
+    font-size: 48px;
+}
+
+.logo {
+    position: relative;
+    top: -39px;
+    right: 29px;
+}
+
+#index_arrow {
+    position: relative;
+    width: 190px;
+    top: -365px;
+    right: 167px;
+}
+
+/*עמוד בית SECTION 2*/
+
+#populars_musag {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 755px;
+    right: 110px;
+}
+  /*קופסאות של הטקסט שמחזיקות את המושג הקטן*/
+.greybox {
+    border-radius: 20px;
+    height: 370px;
+    width: 350px;
+    padding: 50px;
+    background-color: whitesmoke;
+    position: relative;
+    margin-left: 15px;
+    display: inline-block;
+    left: 5%;
+    top: 55px;
+}
+
+.greybox2 {
+    border-radius: 20px;
+    height: 370px;
+    width: 350px;
+    padding: 50px;
+    background-color: whitesmoke;
+    position: relative;
+    margin-left: 15px;
+    display: inline-block;
+    top: 55px
+}
+
+.greybox3 {
+    border-radius: 20px;
+    height: 370px;
+    width: 350px;
+    padding: 50px;
+    background-color: whitesmoke;
+    position: relative;
+    margin-left: 15px;
+    display: inline-block;
+    right: 5%;
+    top: 55px;
+}
+
+.title_h1 {
+    color: #FFC13D;
+    font-size: 56px;
+    font-family: 'Heebo-Bold';
+    position: relative;
+    left: 130px;
+    bottom: 100px;
+    text-align: center;
+}
+
+.title_index_section2 {
+    font-family: 'Heebo-Bold';
+    color: #091F92;
+    top: 30px;
+    position: relative;
+    white-space: nowrap;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    top: -11px;
+}
+
+.p_index_section2 {
+    justify-content: right;
+    font-family: 'Heebo-Light';
+    font-size: 23px;
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    line-height: 170%;
+    margin:5px;
+}
+
+
+
+
+/*כפתור למושג המלא*/
+
+.elementor-button-index1 {
+    background-color: #091F92;
+    color: #091F92;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    height: 40px;
+    border-radius: 13px;
+    width: 170px;
+    top: 285px;
+    right: 95px;
+    position: absolute;
+    justify-content: center;
+    cursor: pointer;
+}
+    /*טקסט בכפתור למושג המלא*/
+    .elementor-button-index1 a {
+        font-family: 'Heebo-SemiBold';
+        font-size: 23px;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        top: 6px;
+        right: 20px;
+        color: white;
+        position: absolute;
+        z-index: 3;
+        white-space: nowrap;
+        text-decoration:none;
+    }
+    .elementor-button-index1:hover{
+       transform:scale(1.1);
+    }
+/*כפתור למושג המלא*/
+
+    .elementor-button-index2 {
+        background-color: #091F92;
+        border-style: solid;
+        border-width: 2px 2px 2px 2px;
+        height: 40px;
+        border-radius: 13px;
+        color: #091F92;
+        width: 170px;
+        top: 285px;
+        right: 95px;
+        position: absolute;
+        justify-content: center;
+        cursor: pointer;
+    }
+    /*טקסט בכפתור למושג המלא*/
+    .elementor-button-index2 a {
+        font-family: 'Heebo-SemiBold';
+        font-size: 23px;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        top: 6px;
+        right: 20px;
+        color: white;
+        position: absolute;
+        z-index: 3;
+        white-space: nowrap;
+        text-decoration: none;
+    }
+.elementor-button-index2:hover {
+    transform: scale(1.1);
+}
+/*כפתור למושג המלא*/
+
+.elementor-button-index3 {
+    background-color: #091F92;
+    color: #091F92;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    height: 40px;
+    border-radius: 13px;
+    width: 170px;
+    top: 285px;
+    right: 95px;
+    position: absolute;
+    justify-content: center;
+    cursor: pointer;
+}
+    /*טקסט בכפתור למושג המלא*/
+    .elementor-button-index3 a {
+        font-family: 'Heebo-SemiBold';
+        font-size: 23px;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        top: 6px;
+        right: 20px;
+        color: white;
+        position: absolute;
+        z-index: 3;
+        white-space: nowrap;
+        text-decoration: none;
+    }
+.elementor-button-index3:hover {
+    transform: scale(1.1);
+}
+
+/*קרוסלה שעובדת וזזה אחרי 5 שניות*/
+* {
+    box-sizing: border-box;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 598px;
+    position: relative;
+    margin: auto;
+    left: -342px;
+    height: 534px;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 5s;
+    animation-name: fade;
+    animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* במסך קטן הקטנת הטקסט שיהיה קריא */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+
+#carousel {
+    background-color: #FFC13D;
+    max-width: 1280px;
+    height: 100%;
+}
+    /*טקסט בקרוסלה כותרת*/
+    #carousel h1 {
+        font-family: 'Heebo-ExtraBold';
+        color: white;
+        position: absolute;
+        right: -650px;
+        top: 90px;
+        font-size: 55px;
+    }
+    /*טקסט בתוך הקרוסלה עצמה*/
+    #carousel p {
+        position: absolute;
+        right: -650px;
+        color: white;
+        top: 185px;
+        line-height: 160%;
+        font-size: 33px;
+        font-family: 'Heebo-Regular';
+        width: 600px;
+    }
+/*כפתור בקרוסלה*/
+.elementor-button-index-carousel-1 {
+    background-color: #091F92;
+    color: #091F92;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    height: 45px;
+    border-radius: 13px;
+    width: 170px;
+    top: 450px;
+    right: -446px;
+    position: absolute;
+    justify-content: center;
+    cursor: pointer;
+}
+    /*טקסט בכפתור בקרוסלה*/
+    .elementor-button-index-carousel-1 a {
+        font-family: 'Heebo-SemiBold';
+        font-size: 23px;
+        align-content: center;
+        text-align: center;
+        color: white;
+        white-space: nowrap;
+        position: relative;
+        top: 10px;
+        text-decoration: none;
+        right: 28px;
+    }
+    .elementor-button-index-carousel-1:hover {
+transform:scale(1.1)  ;
+
+    }
+
+
+
+    #college-lists {
+        padding-top: 150px;
+    }
+
+/*טקסט של מכללות שכתבו עלינו*/
+.college-list {
+    font-family: 'Heebo-Bold';
+    color: #091F92;
+    font-size: 48px;
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
+
+   /*כתבו עלינו רשימת מוסדות ולוגאים*/
+#Bar-ilan {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    right:30px;
+    top:3px;
+}
+
+#BGU {
+    width: 215px;
+    height: 150px;
+    position: relative;
+    padding-right:50px;
+    right:100px;
+}
+#TelAviv {
+    width: 240px;
+    height: 125px;
+    right:220px;
+    position: relative;
+    padding-right: 50px;
+}
+#HIT {
+    width: 315px;
+    height: 215px;
+    position: relative;
+    padding-right: 50px;
+    right: 310px;
+}
+/*-------------------------------------------------עמוד מילון מושגים*/
+#dictionary-open {
+    width: 1280px;
+    height: 400px;
+    background-color: #FFC13D;
+    margin: 0% auto;
+    padding-top: 1px;
+}
+/*מילון מושגים כותרת*/
+.dictionary-title {
+    position: relative;
+    color: white;
+    font-family: 'Heebo-Bold';
+    margin: 0 auto;
+    right: 31%;
+    top: -295px;
+    font-size: 48px;
+}
+/*מילון מושגים תת כותרת*/
+.dictionary-info {
+    position: relative;
+    color: white;
+    font-family: 'Heebo-Bold';
+    margin: 0 auto;
+    right: 15%;
+    top: -280px;
+    font-size: 34px;
+}
+/*אייקון למילון מושגים*/
+.icon-dictionary {
+    position: relative;
+    top: -295px;
+    right: 554px;
+}
+
+/*כותרת רשימת מושגים*/
+section .dictionary-title2 {
+    font-family: 'Heebo-Bold';
+    color: #091F92;
+    top: 15px;
+    right: 30px;
+    position: absolute;
+    display: inline;
+    white-space: nowrap;
+}
+
+/*רשימת המושגים התיבה עצמה*/
+.dictionary-container {
+    border-radius: 10px;
+    height: 570px;
+    width: 230px;
+    padding: 50px;
+    background-color: whitesmoke;
+    position: relative;
+    display: inline-block;
+    right: 25px;
+    top: -126px;
+    justify-content: right;
+    z-index: 1;
+}
+    /*רשימת המושגים בצד*/
+    .dictionary-container ul {
+        color: #091F92;
+        white-space: nowrap;
+        line-height: 150%;
+        right: 0px;
+        position: absolute;
+        font-family: 'Heebo-Regular';
+    }
+
+        .dictionary-container ul li a {
+            font-family: 'Heebo-Regular';
+        }
+
+        /*צבעים שמשתנים שועשים מעבר עכבר על ררשימת המושגים*/
+        .dictionary-container ul li:hover {
+            color: transparent;
+        }
+
+        .dictionary-container ul li a:hover {
+            color: white;
+            background-color: #091F92
+        }
+/*החץ ברשימת מושגים*/
+.arrow {
+    color: #091F92;
+    border: solid;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    position: absolute;
+    right: 170px;
+    top: -1px;
+    padding: 5px;
+}
+/*החץ למטה ברשימת מושגים*/
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    cursor: pointer;
+}
+/*הגדרות החץ  למעלה שמפנה אותי חזרה לרשימת המושגים*/
+.arrowup {
+    transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+    cursor: pointer;
+    color: white;
+    border: solid;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    right: 177px;
+    padding: 5px;
+}
+/*רשימת המושגים המלאה התוכן*/
+.musag {
+    position: relative;
+    right: 355px;
+    top: -694px;
+}
+/*כותרות רשימת המושגים התוכן*/
+.musag-title {
+    color: #FFC13D;
+    font-size: 35px;
+    font-family: 'OS_Luizi Round-FFC';
+}
+/*רשימת המושגים התוכן עצמה*/
+.musag p {
+    line-height: 130%;
+    text-wrap: normal;
+    margin: 5px;
+    font-size: 18px;
+    font-family: 'Heebo-Regular';
+    width: 880px;
+}
+
+/*הגדרות הרשימה שלי*/
+li a {
+    text-decoration: none;
+    color: #091F92;
+}
+/*כפתור חזרה לרשימת המושגים*/
+.elementor-button {
+    background-color: #091F92;
+    color: white;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    height: 46px;
+    border-radius: 20px;
+    width: 204px;
+    top: 710%;
+    position: absolute;
+    z-index: 1;
+    justify-content: center;
+    cursor: pointer;
+    right: 140px;
+}
+    /*טקסט בכפתור חזרה לרשימת מושגים*/
+    .elementor-button p {
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        top: 14px;
+        right: -13px;
+        position: relative;
+        font-family: 'Heebo-Bold';
+
+    }
+    .elementor-button:hover{
+        transform:scale(1.1);
+    }
+
+
+                    
+/*-------------------------------------------------עמוד הטיפים*/
+
+
+
+
+
+
+/*כותרת עמוד */
+.pagetitle {
+    position: relative;
+    color: white;
+    font-family: 'Heebo-Bold';
+    margin: 0 auto;
+    right: 545px;
+    top: -295px;
+    font-size: 48px;
+}
+
+/*כותרת משנית עמוד טיפים*/
+.pageinfo1 {
+    position: relative;
+    color: white;
+    font-family: 'Heebo-Bold';
+    margin: 0 auto;
+    right: 20%;
+    top: -280px;
+    font-size: 34px;
+}
+
+/*אייקון בתחילת העמוד */
+.icon-tips {
+    position: relative;
+    top: -295px;
+    right: 535px;
+}
+
+.title_Tip {
+    font-family: 'OS_Luizi Round-FFC';
+    color: #091F92;
+    font-size: 40pt;
+    margin: 15px;
+}
+
+.tips {
+    width: 100%;
+    margin: 100px;
+    position: relative;
+    top:-30px;
+}
+
+    .tips h2 {
+        color: #FFC13D;
+        margin: 20px;
+        font-size: 30px;
+        font-family: 'OS_Luizi Round-FFC';
+    }
+
+    .tips p {
+        line-height: 130%;
+        text-wrap: normal;
+        margin: 10px;
+        font-size: 20px;
+        font-family: 'Heebo-Regular';
+        width: 880px;
+    }
+
+.tips-button1 {
+    position: relative;
+    right: 100px;
+    top:-175px;
+}
+.tips-button2 {
+    position: relative;
+    right: 300px;
+    top: -175px;
+}
+.tips-button3 {
+    position: relative;
+    right: 500px;
+    top: -175px;
+}
+
+.tips-button1:hover , .tips-button2:hover , .tips-button3:hover{
+    box-shadow: 0 8px 16px 0 #717171;
+    border-radius:50%;
+}
+
+/*-----------------------------------------------------דף אודות*/
+
+/*אודות כותרת*/
+.about-title {
+    position: relative;
+    color: white;
+    font-family: 'Heebo-Bold';
+    right: 545px;
+margin-top:-345px;
+font-size: 48px;
+top:105px
+}
+/*אודות תת כותרת*/
+.about-info {
+    position: relative;
+    color: white;
+    font-family: 'Heebo-Bold';
+    right: 315px;
+   top: 20px;
+    font-size: 34px;
+}
+/*אייקון לעמוד האודות*/
+.icon-about {
+    position: relative;
+    top: -242px;
+    right: 554px;
+}
+
+/*פיסקת פתיחה של העמוד*/
+#about_sectionfirst {
+    line-height: 1.2;
+    padding-top: 20px;
+    padding-right: 40px;
+}
+
+/*כותרת ראשונה של העמוד*/
+#about_sectionfirst {
+    font-family: 'Heebo-Bold';
+    font-size: 56pt;
+    margin-bottom: 5px;
+    padding-top: 90px;
+    padding-right: 45px;
+}
+
+    /*כותרת שניה*/
+    #about_sectionfirst h2 {
+        font-family: 'Heebo-Bold';
+        font-size: 30pt;
+        color: #FFC13D;
+        margin-bottom: 10px;
+        padding-right: 20px;
+    }
+
+    /*פיסקה פתיחת אודות*/
+    #about_sectionfirst p {
+        font-family: 'Heebo-Regular';
+        font-weight: 400;
+        font-size: 16pt;
+        color: black;
+        width: 1000px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        line-height: 1.2;
+    }
+
+
+.about_other_section div {
+    font-family: 'Heebo-Regular';
+    font-weight: 400;
+    font-size: 16pt;
+    line-height: 1.2;
+}
+
+    .about_other_section div ul li {
+        font-family: 'Heebo-Regular';
+        font-weight: 400;
+        font-size: 16pt;
+        line-height: 1.2;
+    }
+
+.about_other_section {
+    font-family: 'Heebo-Regular';
+    font-weight: 400;
+    font-size: 16pt;
+    padding-right: 45px;
+    line-height: 1.2;
+    padding-top: 30px;
+    margin-bottom: 40px;
+}
+
+    .about_other_section h2 {
+        color: #FFC13D;
+        font-family: 'OS_Luizi Round-FFC';
+        font-size: 24pt;
+    }
+
+    .about_other_section h3 {
+        font-family: 'OS_Luizi Round-FFC';
+        color: #FFC13D;
+        font-size: 20pt;
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+
+/*קישורים לעמודי אתר*/
+.about_link {
+    text-decoration: none;
+    font-family: 'Heebo-Regular';
+    font-weight: 400;
+    font-size: 16pt;
+    line-height: 1.2;
+    color:black;
+}
+
+    /*מעבר על קישורים לעמודי אתר*/
+    .about_link:hover {
+        text-decoration: none;
+        color:#FFC13D;
+    }
+
+
+/*שמות מתחת לתמונות אודות*/
+
+.about_pic {
+    width: 150px;
+    height: 150px;
+   margin-left:20px;
+}
+
+#about_reut {
+    color: #091F92;
+    font-family: 'Heebo-Regular';
+    font-size: 20pt;
+    display: inline-block;
+    padding-right: 50px;
+
+}
+
+#about_shilat {
+    color: #091F92;
+    font-family: 'Heebo-Regular';
+    font-size: 20pt;
+    display: inline-block;
+    padding-right: 52px;
+}
+
+#about_dani {
+    color: #091F92;
+    font-family: 'Heebo-Regular';
+    font-size: 20pt;
+    display: inline-block;
+    padding-right: 49px;
+}
+
+#about_HIT {
+    margin-bottom: 50px;
+    margin-top: 80px;
+}
+
+    
+
+    #about_HIT img {
+position:relative;
+right:35%;
+    }
+        #about_HIT img:hover {
+transform:scale(1.1);
+        }
+
+
+
+/*-------------------------------------------------עמוד צור קשר*/
+
+
+
+#contactUs_h2 {
+    color: white;
+    font-family: 'Heebo-Bold';
+    margin: 0 auto;
+    font-size: 28px;
+    white-space: nowrap;
+}
+
+/*כוכבית אדומה לתכני חובה */
+.contactUs_star
+ {
+    color: red;
+}
+
+
+#contactUs_h1 {
+    font-family: 'Heebo-Bold';
+    font-size: 40px;
+    color: white;
+    margin-right: 44%;
+    position: relative;
+    top: 33px;
+    right:-21px;
+    margin-top:-257px;
+}
+
+#contactUs_h2 {
+    color: white;
+    font-family: 'Heebo-Bold';
+    font-size: 34px;
+    white-space: nowrap;
+    margin-right: 40%;
+    position: relative;
+    top: 10px;
+    right:-20px;
+}
+/*אייקון לעמוד צור קשר*/
+.icon-contact {
+    position: relative;
+    top: -235px;
+    right: 565px;
+}
+
+.contact-info {
+    padding-top: 100px;
+}
+form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+    form label {
+        padding-top: 20px;
+        text-decoration: none;
+        font-family: 'Heebo-Regular';
+        font-weight: 400;
+        font-size: 16pt;
+        line-height: 2;
+    }
+/*צבע מסגרת כתום לטופס*/
+.contactUs_width_input
+ {
+    width: 50%;
+    font-family: 'Heebo-Regular';
+    font-weight: 400;
+    font-size: 16pt;
+    border: 3px solid #FFC13D;
+}
+    /*החלפת צבע מסגרת כחול לטופס*/
+    .contactUs_width_input:hover
+ {
+        width: 50%;
+        font-family: 'Heebo-Regular';
+        font-weight: 400;
+        font-size: 16pt;
+        border: 3px solid #091F92;
+        
+    }
+
+form label b {
+    font-family: 'Heebo-Bold';
+    font-weight: 500;
+    line-height: 2;
+}
+
+#sendForm {
+    color: white;
+    background: #FFC13D;
+    font-size: 20pt;
+    width: 150px;
+    border-radius:30px;
+}
+
+    #sendForm:hover {
+        background: #091F92;
+        color: white;
+        font-size: 20pt;
+        
+    }
+
+
+/*מפת האתר------------------------------------------*/
+.siteMap-title {
+    position: relative;
+    right: 495px;
+    color: white;
+    font-family: 'Heebo-Bold';
+    margin: 0 auto;
+    top: -300px;
+    font-size: 48px;
+}
+#listSiteMap li {
+    font-family: 'Heebo-Regular';
+    font-size:22px;
+    list-style:none;
+    
+}
+    #listSiteMap li a {
+       text-decoration:none;
+    }
+        #listSiteMap li a:hover {
+            color: #FFC13D;
+        }
+#listSiteMap {
+    padding-bottom:50px;
+}
+
+.siteMap-info {
+    position: relative;
+    color: white;
+    font-family: 'Heebo-Bold';
+    right: 315px;
+    top: -285px;
+    font-size: 34px;
+}
+.siteMap-ttile2 {
+   color: #FFC13D;
+    font-family: 'OS_Luizi Round-FFC';
+    font-size:60px;
+    position:relative;
+    top:-40px;
+    text-align:center;
+}
+
+/*דלג לתוכן הכפתור */
+
+#skip_to_content {
+    display: inline-block;
+    position: relative;
+    width: 1px;
+    height: 1px;
+}
+    #skip_to_content a {
+        display: block;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+        #skip_to_content a:focus, #skip_to_content a:active {
+            width: 5px;
+            height: 5px;
+            overflow: visible;
+            color:white;
+            background-color:#091F92;
+                
+        }
+
+        /*עיצוב עמוד מה טיפוס שלך ייצוג אינטרקטיבי*/
+.mytype {
+    position: relative;
+    right: 460px;
+    color: white;
+    font-family: 'Heebo-Bold';
+    margin: 0 auto;
+    top: -300px;
+    font-size: 48px;
+}
+.mytype2 {
+    position: relative;
+    right: 500px;
+    color: white;
+    font-family: 'Heebo-Bold';
+    margin: 0 auto;
+    top: -300px;
+    font-size: 34px;
+}
+
+
+#mytypebottom{
+    margin-bottom:150px;
+}

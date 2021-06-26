@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>
+        StudentIL | צור קשר
+    </title>
+    <meta name="description" content="A world meant for the students to help them with the academic language" />
+    <meta name="keywords" content="Student" />
+    <meta name="author" content="Danny Gossels,Reut Bibi, Shilat Daminat" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!-- קוד שגורם למסך להגדיל שאתה לוחץ על כפתור ל2005 וגורם למסך להקטין שלוחצים על 100% -->
+
+    <script>
+
+        var fontSizeSmall = true
+        var accessibilityMode = false;
+
+        function big() {
+            var body = document.getElementsByTagName('body')[0];
+            if (fontSizeSmall) {
+                body.style.zoom = "200%";
+                body.style.overflow = "scroll";
+                fontSizeSmall = false;
+                document.getElementById("buttonAccessibility").value = "לחצו ל100%";
+            }
+            else {
+                body.style.zoom = "100%";
+                body.style.overflowX = "hidden";
+
+                fontSizeSmall = true;
+                document.getElementById("buttonAccessibility").value = "לחצו ל200%";
+            }
+        }
+
+        /*קוד שמחליף את הכפתור הנגישות שלוחצים עליו */
+
+        function toggleTxt() {
+            var btnElement = document.getElementsByClassName('button300')[0]
+            if (!accessibilityMode) {
+                btnElement.value = "הסר נגישות"
+                accessibilityMode = true
+
+            } else {
+                btnElement.value = "לחץ לנגישות"
+                accessibilityMode = false
+            }
+        }
+
+
+    </script>
+    <!---קוד שהופך את הצבעים לנגישים באתר--->
+    <script>
+
+
+
+
+
+
+        function gfg_Run() {
+            toggleTxt()
+            $('*').toggleClass("access");
+
+        }
+
+
+    </script>
+
+    <!----favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/android-chrome-512x512.png">
+</head>
+<body>
+    <div id="container">
+        <input type="button" onclick="big()" value="לחצו ל200%" id="buttonAccessibility" class="button200">
+        <input type="button" onclick="gfg_Run()" class="button300" value=" לחץ לנגישות  ">
+
+        <div role="main">
+            <header>
+                <nav id="nav_header">
+                    <ul>
+                        <li>  <a href="index.html" aria-label="לעמוד הראשי"> <img class="logo" src="Images/Logo/logo.png" height="70" /></a></li>
+                        <li style="margin-top:-22px;"><a class="nav-menu" href="dictionary.html" aria-label="לעמוד מילון מושגים לחץ כאן"><span>מילון מושגים</span></a></li>
+
+                        <li style="margin-top:-22px;">
+                            <a class="nav-menu" href="Tips.html" aria-label="לעמוד טיפים לחץ כאן"><span>טיפים</span></a>
+                            <ul>
+                                <li style="margin-top:-18px;"><a class="nav-menu" href="Tips.html#index-tips-learning"><span>טיפים ללמידה יעילה</span></a></li>
+
+                                <li style="margin-top:3px;"><a class="nav-menu" href="Tips.html#index-tips-newyear"><span>טיפים לתחילת השנה</span></a></li>
+                                <li style="margin-top:3px;"><a class="nav-menu" href="Tips.html#index-tips-newpc"><span>טיפים למחשב נייד</span></a></li>
+
+                            </ul>
+                        </li>
+
+                        <li style="margin-top:-22px;"><a class="nav-menu" href="about.html" aria-label="לעמוד אודות לחץ כאן"><span>אודות</span></a></li>
+                        <li style="margin-top:-22px;"><a class="nav-menu" href="contactUs.html" aria-label="לעמוד צור קשר לחץ כאן"><span>צור קשר</span></a></li>
+                    </ul>
+
+                </nav>
+                <div id="skip_to_content">
+
+                    <a href="#form">דלג לתוכן העמוד</a>
+
+                </div>
+            </header>
+            <img class="icon-contact" src="Images/Contact/contact-title.png" height="100" width="100" />
+
+            <h1 id="contactUs_h1">צור קשר</h1>
+            <h2 id="contactUs_h2">אנחנו פה בשבילך</h2>
+
+
+
+
+            <!-- תפריט פירורי לחם -->
+            <nav id="nav_bread_crumbs">
+                <ol>
+                    <li><a class="nav-menu" href="index.html">ראשי</a></li>
+                    <li><a class="nav-menu" href="contactUs.html" aria-label="מיקומך באתר כרגע הוא בצור קשר">צור קשר</a></li>
+                </ol>
+            </nav>
+
+
+            <a name="form"></a>
+            <form class="contact-info">
+                <label for="myEmail">
+                    <input type="hidden" id="myEmail" name="StudentIL" value="studentIL.telem@gmail.com" />
+
+                </label>
+
+                <label for="firstName">
+                    <span class="contactUs_star">*</span><b>שם פרטי:</b></><br />
+                    <input type="text" id="firstName" required placeholder="הקלד/י את שמך הפרטי" class="contactUs_width_input" /><br />
+                </label><br />
+
+                <label for="lastName">
+                    <span class="contactUs_star">*</span><b>שם משפחה:</b><br />
+                    <input type="text" id="lastName" required placeholder="הקלד/י את שם המשפחה שלך" class="contactUs_width_input" /><br />
+                </label><br />
+
+                <label for="Bdate">
+                    <b>תאריך לידה:</b><br />
+                    <input type="date" id="Bdate" placeholder="הקלד/י את תאריך הלידה שלך" class="contactUs_width_input" /><br />
+                </label><br />
+
+                <label for="phone">
+                    <span class="contactUs_star">*</span><b>טלפון נייד:</b><br />
+                    <input type="number" id="phone" required placeholder="הקלד/י את מספר הטלפון שלך" class="contactUs_width_input" /><br />
+                </label><br />
+
+                <label for="mail">
+                    <span class="contactUs_star">*</span><b>מייל:</b><br />
+                    <input type="email" id="mail" required placeholder="הקלד/י את המייל שלך" class="contactUs_width_input" /><br />
+                </label><br />
+
+                <label for="gender">
+                    <b>מגדר:</b><br />
+                    <label for="male">
+                        <input type="radio" id="male" name="gender" /> גבר
+                    </label><br />
+                    <label for="female">
+                        <input type="radio" id="female" name="gender" /> אישה
+                    </label><br />
+                    <label for="notInterested">
+                        <input type="radio" id="notInterested" name="gender" /> לא מעוניין לציין
+                    </label><br />
+                </label><br />
+
+                <label for="likedContent">
+                    <b>תוכן שאהבתם:</b> <br />
+                    <input type="checkbox" id="healingRoom" /> מילון מושגים <br />
+                    <input type="checkbox" id="MeMyself&I" /> טיפים לתחילת שנה <br />
+                    <input type="checkbox" id="TheDayAfterRoom" /> טיפים ללמידה יעילה <br />
+                    <input type="checkbox" id="UnfollowRoom" /> טיפים למחשב נייד <br />
+                </label><br />
+
+                <label for="newContent">
+                    <b>הצעות לתוכן נוסף:</b><br />
+                    <textarea id="newContent" placeholder="הצעות לתוכן נוסף" rows="3" class="contactUs_width_input"></textarea>
+                </label><br />
+
+                <label for="newQuestions">
+                    <b>שאלות לצוות האתר:</b><br />
+                    <textarea id="newQuestions" placeholder="שאלות לצוות האתר" rows="3" class="contactUs_width_input"></textarea>
+                </label><br />
+
+                <label for="sendForm">
+                    <input type="submit" id="sendForm" value="שליחה" />
+                </label>
+                <div id="feedback"></div>
+            </form>
+
+
+            <!---פוטר של תחתית העמוד-->
+
+            <footer>
+                <nav class="nav_footer2" aria-label="תפריט תחתון">
+                    <ul class="heb_footer2">
+                        <li><a href="index.html" aria-label="לעמוד הראשי" target="_self">עמוד הבית</a></li>
+                        <li><a href="about.html" aria-label="לעמוד אודות לחץ כאן" target="_self">אודות</a></li>
+                        <li><a href="#" aria-label="עמוד זה אינו פעיל" target="_self" class="notActive">שאלות נפוצות</a></li>
+                    </ul>
+                    <ul class="heb_footer2">
+                        <li><a href="siteMap.html" aria-label="לעמוד מפת האתר לחץ כאן" target="_self">מפת האתר</a></li>
+                        <li><a href="contactUs.html" aria-label="לעמוד צור קשר לחץ כאן" target="_self">צור קשר</a></li>
+                        <li><a href="Documents/זכויות יוצרים.pdf">זכויות יוצרים</a></li>
+                    </ul>
+                    <ul class="english_footer2">
+                        <li><a href="dictionary.html" aria-label="לעמוד מילון מושגים לחץ כאן" target="_self">מילון מושגים</a></li>
+                        <li><a href="Tips.html#index-tips-learning" aria-label="לעמוד טיפים לחץ כאן" target="_self">טיפים ללמידה יעילה</a></li>
+
+                        <li><a href="Tips.html#index-tips-newyear" aria-label="לעמוד טיפים לחץ כאן" target=" self">טיפים לתחילת שנה</a></li>
+                        <li><a href="Tips.html#index-tips-newpc" aria-label="לעמוד טיפים לחץ כאן" target="_self">טיפים למחשב נייד</a></li>
+                    </ul>
+                </nav>
+                <div id="footer_lower2">
+                    <p id="Copyright_StudentIL2">
+                        כל הזכויות שמורות ל             2021 StudentIL ©
+                    </p>
+                    <p id="website_address_StudentIL2">
+                        www.StudentIL.co.il
+                    </p>
+
+
+                </div>
+            </footer>
+
+        </div>
+
+
+    </div>
+
+</body>
+</html>
