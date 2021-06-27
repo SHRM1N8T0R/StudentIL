@@ -946,12 +946,13 @@ li a {
     height: 46px;
     border-radius: 20px;
     width: 204px;
-    top: 710%;
-    position: absolute;
+    top: -830px;
+    position: relative;
     z-index: 1;
     justify-content: center;
     cursor: pointer;
-    right: 140px;
+    right: 45px;
+    text-decoration:none;
 }
     /*טקסט בכפתור חזרה לרשימת מושגים*/
     .elementor-button p {
@@ -962,21 +963,17 @@ li a {
         right: -13px;
         position: relative;
         font-family: 'Heebo-Bold';
+        text-decoration: none;
 
     }
     .elementor-button:hover{
         transform:scale(1.1);
     }
 
-
-                    
+#dictionary-list{
+    text-decoration:none;
+}
 /*-------------------------------------------------עמוד הטיפים*/
-
-
-
-
-
-
 /*כותרת עמוד */
 .pagetitle {
     position: relative;
@@ -1177,7 +1174,13 @@ top:105px
         color:#FFC13D;
     }
 
-
+.pdf {
+    text-decoration: none;
+    color:black
+}
+    .pdf:hover {
+        color: #FFC13D;
+    }
 /*שמות מתחת לתמונות אודות*/
 
 .about_pic {
